@@ -54,4 +54,13 @@ Through this project, the following concepts were learned:
 8. Testing websites using web browsers
 9. Deploying a website using online hosting platforms
 
+## Deployment
+
+The website is deployed using Vercel and is publicly accessible online.
+
+Live Website:
+https://online-resume-and-biodata.vercel.app/
+
+The project is connected to GitHub, and updates can be automatically deployed through Vercel.
+
 
