@@ -1,0 +1,902 @@
+
+/* =====================================================
+   GENERAL SETTINGS
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+
+/* =====================================================
+   HOME PAGE
+   ===================================================== */
+
+.home {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff,
+        #e0f2fe
+    );
+
+    padding: 60px 20px;
+}
+
+
+/* Home Content */
+
+.home-content {
+    width: 90%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+}
+
+
+/* Profile Image */
+
+.profile-image img {
+    width: 230px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.4s;
+}
+
+.profile-image img:hover {
+    transform: scale(1.08);
+}
+
+
+/* Introduction */
+
+.intro {
+    max-width: 550px;
+}
+
+.welcome {
+    color: #2563eb;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 42px;
+
+    color: #172554;
+
+    margin-bottom: 15px;
+}
+
+.intro h2 span {
+    color: #2563eb;
+}
+
+.description {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* Home Buttons */
+
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    margin-right: 10px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #172554;
+
+    transform: translateY(-3px);
+}
+
+.btn.second {
+    background-color: #0f766e;
+}
+
+.btn.second:hover {
+    background-color: #064e3b;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+.about {
+    text-align: center;
+
+    padding: 60px 10%;
+
+    background-color: white;
+}
+
+.about > h2 {
+    font-size: 32px;
+
+    color: #172554;
+
+    margin-bottom: 15px;
+}
+
+.about > p {
+    max-width: 750px;
+
+    margin: auto;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* About Cards */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.card {
+    width: 280px;
+
+    background-color: #f8fafc;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+    color: #2563eb;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   CONTACT BOX
+   ===================================================== */
+
+.contact-box {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: #e0f2fe;
+}
+
+.contact-box h2 {
+    color: #172554;
+
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 10px;
+}
+
+
+/* JavaScript Button */
+
+button {
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #172554;
+
+    transform: scale(1.05);
+}
+
+#message {
+    color: #15803d;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   RESUME PAGE
+   ===================================================== */
+
+.resume-page {
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* Resume Main Title */
+
+.resume-title {
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resume-title h2 {
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+.resume-title p {
+    margin: 7px;
+
+    font-size: 16px;
+}
+
+
+/* Resume Section Box */
+
+.resume-box {
+    background-color: white;
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.09);
+
+    transition: 0.3s;
+}
+
+.resume-box:hover {
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Resume Section Heading */
+
+.resume-box h2 {
+    color: #172554;
+
+    font-size: 23px;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 2px solid #dbeafe;
+}
+
+.resume-box > p {
+    color: #555;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   RESUME TABLE
+   ===================================================== */
+
+.resume-table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    border: 1px solid #d5deeb;
+}
+
+
+/* Table Heading */
+
+.resume-table th {
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb
+    );
+
+    color: white;
+
+    padding: 15px 12px;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+/* Table Data */
+
+.resume-table td {
+    padding: 14px 12px;
+
+    border-right: 1px solid #d5deeb;
+
+    border-bottom: 1px solid #d5deeb;
+
+    text-align: center;
+
+    color: #444;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* Remove last borders */
+
+.resume-table tr td:last-child {
+    border-right: none;
+}
+
+
+/* Alternate Row */
+
+.resume-table tr:nth-child(even) td {
+    background-color: #f4f8ff;
+}
+
+
+/* Table Hover */
+
+.resume-table tbody tr:hover td,
+.resume-table tr:hover td {
+    background-color: #e0efff;
+
+    transition: 0.2s;
+}
+
+
+/* First Column */
+
+.resume-table td:first-child {
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   RESUME DECLARATION
+   ===================================================== */
+
+.declaration {
+    position: relative;
+}
+
+.signature {
+    margin-top: 30px;
+
+    text-align: right;
+
+    color: #172554;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   BIO-DATA PAGE
+   ===================================================== */
+
+.biodata-page {
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+/* Bio-data Main Title */
+
+.biodata-title {
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #2563eb
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.biodata-title h2 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 1px;
+}
+
+.biodata-title p {
+    opacity: 0.9;
+
+    font-size: 16px;
+}
+
+
+/* Bio-data Section */
+
+.bio-box {
+    background-color: white;
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #0f766e;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.09);
+
+    transition: 0.3s;
+}
+
+.bio-box:hover {
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Bio-data Heading */
+
+.bio-box h2 {
+    color: #0f766e;
+
+    font-size: 23px;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 2px solid #ccfbf1;
+}
+
+
+/* =====================================================
+   BIO-DATA TABLE
+   ===================================================== */
+
+.bio-table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* Bio Table Header */
+
+.bio-table th {
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #14b8a6
+    );
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    border-right: 1px solid #0f766e;
+
+    border-bottom: 1px solid #0f766e;
+}
+
+
+/* Bio Table Data */
+
+.bio-table td {
+    padding: 15px;
+
+    border-right: 1px solid #d5deeb;
+
+    border-bottom: 1px solid #d5deeb;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* Alternate Rows */
+
+.bio-table tr:nth-child(even) td {
+    background-color: #f3faf9;
+}
+
+
+/* Hover */
+
+.bio-table tr:hover td {
+    background-color: #e6fffb;
+
+    transition: 0.2s;
+}
+
+
+/* Personal Details Left Column */
+
+.bio-table th:first-child {
+    width: 30%;
+}
+
+
+/* Remove Last Borders */
+
+.bio-table tr:last-child td,
+.bio-table tr:last-child th {
+    border-bottom: none;
+}
+
+.bio-table td:last-child,
+.bio-table th:last-child {
+    border-right: none;
+}
+
+
+/* =====================================================
+   EDUCATION TABLE IN BIO-DATA
+   ===================================================== */
+
+.education-table th {
+    background: linear-gradient(
+        135deg,
+        #0f766e,
+        #14b8a6
+    );
+
+    text-align: center;
+
+    width: auto;
+}
+
+.education-table td {
+    text-align: center;
+}
+
+
+/* =====================================================
+   SIGNATURE TABLE
+   ===================================================== */
+
+.signature-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+.signature-table td {
+    border: none !important;
+
+    padding: 10px;
+
+    width: 50%;
+
+    color: #555;
+}
+
+.signature-table td:last-child {
+    text-align: right;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    nav a {
+        margin: 0 8px;
+
+        font-size: 14px;
+    }
+
+
+    /* Home */
+
+    .home-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .intro h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    /* Resume */
+
+    .resume-page,
+    .biodata-page {
+        width: 95%;
+
+        margin: 25px auto;
+    }
+
+    .resume-title,
+    .biodata-title {
+        padding: 25px 15px;
+    }
+
+    .resume-title h2 {
+        font-size: 27px;
+    }
+
+    .biodata-title h2 {
+        font-size: 24px;
+    }
+
+    .resume-box,
+    .bio-box {
+        padding: 18px;
+
+        overflow-x: auto;
+    }
+
+
+    /* Tables */
+
+    .resume-table,
+    .bio-table {
+        min-width: 700px;
+    }
+
+    .resume-box h2,
+    .bio-box h2 {
+        font-size: 20px;
+    }
+
+
+    /* Signature */
+
+    .signature {
+        text-align: left;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL SCREENS
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin: 0 5px;
+
+        font-size: 12px;
+    }
+
+    .profile-image img {
+        width: 180px;
+
+        height: 180px;
+    }
+
+    .intro h2 {
+        font-size: 27px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+}
+
