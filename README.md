@@ -29,27 +29,27 @@ The design can also be customized by modifying the CSS file according to persona
 
 The project can be further improved by adding:
 
-Download Resume as PDF option
-Dark/Light mode
-Animated sections
-Contact form
-Social media links
-Project gallery
-More JavaScript-based interactions
-Online hosting using GitHub Pages
-Backend support for storing contact form submissions
+(1)Download Resume as PDF option
+(2)Dark/Light mode
+(3)Animated sections
+(4)Contact form
+(5)Social media links
+(6)Project gallery
+(7)More JavaScript-based interactions
+(8)Online hosting using GitHub Pages
+(9)Backend support for storing contact form submissions
 
 ## Learning Outcomes
 
 Through this project, the following concepts were learned:
 
-Creating webpages using HTML5
-Designing webpages using CSS3
-Using JavaScript for interactivity
-Creating responsive layouts
-Organizing information using HTML elements
-Linking HTML, CSS, and JavaScript files
-Managing a web development project
-Testing websites using web browsers
-Deploying a website using online hosting platforms
+(1)Creating webpages using HTML5
+(2)Designing webpages using CSS3
+(3)Using JavaScript for interactivity
+(4)Creating responsive layouts
+(5)Organizing information using HTML elements
+(6)Linking HTML, CSS, and JavaScript files
+(7)Managing a web development project
+(8)Testing websites using web browsers
+(9)Deploying a website using online hosting platforms
 
